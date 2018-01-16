@@ -1,10 +1,10 @@
 Partial Differencial Equation: \newline
-The Black-Scholes-Merton partial differential equation (PDE) is as follows: \newline
+The Black-Scholes-Merton partial differential equation (PDE) is as follows:
 \begin{align*}
 \frac{\partial V}{\partial t} + rS\frac{\partial V}{\partial S} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} - rV = 0
 \end{align*}
 
-Before to approximate this PDE using finite difference methods, we know that partial derivatives can be approximate 
+Before to approximate this PDE using finite difference methods, we know that partial derivatives can be approximate using either backward or forward differences. For our purposes, we will use the following approximations:
 
 Backward difference in $t$:
 \begin{align*}
