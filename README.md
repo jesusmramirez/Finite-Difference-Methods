@@ -1,6 +1,6 @@
 Partial Differencial Equation:
 \begin{align*}
-\frac{\partial V}{\partial V} + rS\frac{\partial V}{\partial S} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} - rV = 0
+\frac{\partial V}{\partial t} + rS\frac{\partial V}{\partial S} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} - rV = 0
 \end{align*}
 
 Backward difference in time:
