@@ -1,14 +1,17 @@
-Partial Differencial Equation:
+Partial Differencial Equation: \newline
+The Black-Scholes-Merton partial differential equation (PDE) is as follows: \newline
 \begin{align*}
 \frac{\partial V}{\partial t} + rS\frac{\partial V}{\partial S} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} - rV = 0
 \end{align*}
 
-Backward difference in time:
+Before to approximate this PDE using finite difference methods, we know that partial derivatives can be approximate 
+
+Backward difference in $t$:
 \begin{align*}
 \frac{\partial V}{\partial t} = \frac{V_{i,j} - V_{i,j - 1}}{\delta t}
 \end{align*}
 
-Forward difference in time:
+Forward difference in $t$:
 \begin{align*}
 \frac{\partial V}{\partial t} = \frac{V_{i,j + 1} - V_{i,j}}{\delta t}
 \end{align*}
@@ -23,14 +26,14 @@ Central difference in $S^2$:
 \frac{\partial^2 V}{\partial S^2} &= \frac{V_{i + 1,j} - 2V_{i,j} + V_{i - 1,j}}{\delta S^2}
 \end{align*}
 
-Explicit Scheme
+Explicit Scheme \newline
 We use the backward difference in $t$ and the central differences in $S$ and $S^2$
 
 \begin{align*}
 \frac{V_{i,j} - V_{i,j - 1}}{\delta t} + rS_i\frac{V_{i + 1,j} - V_{i - 1,j}}{2\delta S} + \frac{1}{2}\sigma^2 S_i^2\frac{V_{i + 1,j} - 2V_{i,j} + V_{i - 1,j}}{\delta S^2} - rV_{i,j} = 0
 \end{align*}
 
-Implicit Scheme
+Implicit Scheme \newline
 We change the backward difference in $t$ by its forward difference
 
 \begin{align*}
