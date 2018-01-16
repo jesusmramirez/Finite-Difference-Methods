@@ -2,22 +2,22 @@ Partial Differencial Equation:
 
 Backward difference in time:
 \begin{align*}
-\frac{\partial f}{\partial t} = \frac{f_{i,j} - f_{i,j - 1}}{dt}
+\frac{\partial V}{\partial V} = \frac{V_{i,j} - V_{i,j - 1}}{\deltat}
 \end{align*}
 
 Forward difference in time:
 \begin{align*}
-\frac{\partial f}{\partial t} = \frac{f_{i,j + 1} - f_{i,j}}{dt}
+\frac{\partial V}{\partial t} = \frac{V_{i,j + 1} - V_{i,j}}{dt}
 \end{align*}
 
 Central difference in $S$:
 \begin{align*}
-\frac{\partial f}{\partial S} &= \frac{f_{i + 1,j} - f_{i - 1,j}}{2dS}
+\frac{\partial V}{\partial S} &= \frac{V_{i + 1,j} - V_{i - 1,j}}{2dS}
 \end{align*}
 
 Central difference in $S^2$:
 \begin{align*}
-\frac{\partial^2 f}{\partial S^2} &= \frac{f_{i + 1,j} - 2f_{i,j} + f_{i - 1,j}}{dS^2}
+\frac{\partial^2 V}{\partial S^2} &= \frac{V_{i + 1,j} - 2V_{i,j} + V_{i - 1,j}}{dS^2}
 \end{align*}
 
 Explicit Scheme
