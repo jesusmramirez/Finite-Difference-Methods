@@ -45,11 +45,11 @@ The Crank-Nicolson scheme is basically the average of the explicit and implicit 
 where
 \begin{align*}
 a_i &= \frac{1}{4}(\sigma^2 k_i^2 - rk_i)dt \\
-b_i &= \frac{1}{2}(\sigma^2 k_i^2 + r)dt\\
+b_i &= \frac{1}{2}(\sigma^2 k_i^2 + r)dt \\
 c_i &= \frac{1}{4}(\sigma^2 k_i^2 + rk_i)dt 
 \end{align*}
 
-\noindent In matrix form:
+In matrix form:
 \begin{align*}
 CU_{j} + g_{j}= DU_{j + 1} + h_{j + 1}
 \end{align*}
