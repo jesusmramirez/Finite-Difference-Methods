@@ -1,4 +1,4 @@
-Partial Differencial Equation: \newline
+Partial Differencial Equation:
 The Black-Scholes-Merton partial differential equation (PDE) is as follows:
 \begin{align*}
 \frac{\partial V}{\partial t} + rS\frac{\partial V}{\partial S} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} - rV = 0
