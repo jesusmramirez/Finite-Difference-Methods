@@ -41,7 +41,9 @@ We change the backward difference in $t$ by its forward difference
 \frac{V_{i,j + 1} - V_{i,j}}{\delta t} + rS_i\frac{V_{i + 1,j} - v_{i - 1,j}}{2\delta S} + \frac{1}{2}\sigma^2 S_i^2\frac{V_{i + 1,j} - 2V_{i,j} + V_{i - 1,j}}{\delta S^2} - rV_{i,j} = 0
 \end{align*}
 
-The Crank-Nicolson scheme is basically the average of the explicit and implicit schemes. Before to compute the average we lead the explicit equation one-period-ahead. After some simplification we get
+Crank-Nicolson scheme:
+
+This scheme is basically an average of both the explicit and implicit schemes. Before we compute the average we have to lead the explicit equation one-period-ahead. After some simplification we get:
 \begin{align*}
 -a_i V_{i - 1,j} + (1 + b_i)V_{i,j} - c_i V_{i + 1,j} = a_i V_{i - 1,j + 1}  + (1 -  b_i) V_{i,j + 1} + c_i V_{i + 1,j + 1}
 \end{align*}
@@ -51,9 +53,4 @@ where
 a_i &= \frac{1}{4} \frac{\delta t}{\delta S}(\frac{\sigma^2 S_i^2}{\delta S} - rS_i)dt \newline
 b_i &= \frac{1}{2} \frac{\delta t}{\delta S}(\sigma^2 S_i^2 + r)dt \newline
 c_i &= \frac{1}{4} \frac{\delta t}{\delta S}(\frac{\sigma^2 S_i^2}{\delta S} + rS_i)dt 
-\end{align*}
-
-In matrix form:
-\begin{align*}
-CU_{j} + g_{j}= DU_{j + 1} + h_{j + 1}
 \end{align*}
