@@ -2,7 +2,7 @@ Partial Differencial Equation:
 
 Backward difference in time:
 \begin{align*}
-\frac{\partial V}{\partial V} = \frac{V_{i,j} - V_{i,j - 1}}{\deltat}
+\frac{\partial V}{\partial V} = \frac{V_{i,j} - V_{i,j - 1}}{\delta t}
 \end{align*}
 
 Forward difference in time:
