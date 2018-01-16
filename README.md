@@ -44,8 +44,8 @@ The Crank-Nicolson scheme is basically the average of the explicit and implicit 
 
 where
 \begin{align*}
-a_i &= \frac{1}{4}(\sigma^2 k_i^2 - rk_i)dt \n
-b_i &= \frac{1}{2}(\sigma^2 k_i^2 + r)dt \n
+a_i &= \frac{1}{4}(\sigma^2 k_i^2 - rk_i)dt \newline
+b_i &= \frac{1}{2}(\sigma^2 k_i^2 + r)dt \newline
 c_i &= \frac{1}{4}(\sigma^2 k_i^2 + rk_i)dt 
 \end{align*}
 
